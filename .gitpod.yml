@@ -41,7 +41,7 @@ tasks:
           echo "Request your token here: https://appetize.io/docs#request-api-token"
       else
           curl -sS --http1.1 "https://$APPETIZE_API_TOKEN@api.appetize.io/v1/apps/$APPETIZE_PUBLICKEY" \
-              -F "file=@/workspace/template-flutter/build/app/outputs/flutter-apk/app.apk" \
+              -F "file=@/workspace/flutter/build/app/outputs/flutter-apk/app.apk" \
               -F platform=android \
               -F "buttonText=Start App" \
               -F "postSessionButtonText=Start App" \
